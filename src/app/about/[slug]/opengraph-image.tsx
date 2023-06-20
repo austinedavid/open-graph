@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import {ImageResponse} from "next/server"
+import acers from "../../../utils/acer2.png"
 type objType = {
     id: string;
     topic: string;
@@ -33,18 +34,34 @@ export default async function og({params:{slug}}:{params:{slug:string}}){
             display:"flex",
             width: "100%",
             height: "100%",
-            background: "yellow"
+            background: "yellow",
+            position: "relative"
             }}>
-                <div style={{
-                    display: "flex"
-                }}>
-                    <p style={{fontSize: "30px"}}>{filtered[0].topic}</p>
-                </div>
-                <div style={{
-                    display: "flex"
-                }}>
-                    <p style={{color: "red"}}>{filtered[0].descriptions}</p>
-                </div>
+               <div style={{
+                    display:"flex",
+                    width: "100%",
+                    height: "100%"
+               }}>
+                <img 
+                src="../../../utils/acer2.png" 
+                alt="the acer"
+                style={{width: "100%", height: "100%"}}
+                />
+               </div>
+               <div style={{
+                display: "flex",
+                flexDirection: "column",
+                position: "absolute",
+                width: "100%",
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: "black",
+                top: "30px",
+                border: "2px solid white"
+               }}>
+                    <p style={{fontSize: "25px", color: "white", marginBottom: "15px"}}>{filtered[0].topic}</p>
+                    <p style={{fontSize: "17px", color: "white"}}>{filtered[0].descriptions}</p>
+               </div>
         </div>),
         size
     )

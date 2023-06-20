@@ -30,12 +30,50 @@ export default async function og({params:{slug}}:{params:{slug:string}}){
     const filtered = ourobj.filter((value)=> value.id == slug)
     console.log("not working")
     return new ImageResponse(
-        (<div style={{
+        (
+            <div
+  style={{
+    height: '100%',
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#fff',
+    fontSize: 32,
+    fontWeight: 600,
+  }}
+>
+  <svg
+    width="75"
+    viewBox="0 0 75 65"
+    fill="#000"
+    style={{ margin: '0 75px' }}
+  >
+    <path d="M37.59.25l36.95 64H.64l36.95-64z"></path>
+  </svg>
+  <div style={{ marginTop: 40 }}>{filtered[0].topic}</div>
+  <div style={{
+    backgroundColor: "blue",
+    border: "1px solid yellow",
+    color: "white",
+    padding: "10px"
+
+  }}>{filtered[0].descriptions}</div>
+</div>
+
+        ),
+        size
+    )
+}
+
+/*
+<div style={{
             display:"flex",
             width: "100%",
             height: "100%",
-            background: "yellow",
-            position: "relative"
+            background: "white",
+            
             }}>
                <div style={{
                     display:"flex",
@@ -51,7 +89,7 @@ export default async function og({params:{slug}}:{params:{slug:string}}){
                <div style={{
                 display: "flex",
                 flexDirection: "column",
-                position: "absolute",
+                
                 width: "100%",
                 alignItems: "center",
                 justifyContent: "center",
@@ -62,7 +100,5 @@ export default async function og({params:{slug}}:{params:{slug:string}}){
                     <p style={{fontSize: "25px", color: "white", marginBottom: "15px"}}>{filtered[0].topic}</p>
                     <p style={{fontSize: "17px", color: "white"}}>{filtered[0].descriptions}</p>
                </div>
-        </div>),
-        size
-    )
-}
+        </div>)
+*/ 

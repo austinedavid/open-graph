@@ -42,7 +42,7 @@ export default async function og({params:{slug}}:{params:{slug:string}}){
                    <div style={{
                     display: "flex",
                     flexDirection: "column",
-                    
+                    height: "100%",
                     width: "100%",
                     alignItems: "center",
                     justifyContent: "center",

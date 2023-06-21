@@ -11,7 +11,11 @@ export const metadata:Metadata = {
 }
 const page = () => {
   return (
-    <div>this is the service page here</div>
+    <div>
+      <p>this is the service page here</p>
+      <p>this need to rerun here</p>
+    </div>
+    
   )
 }
 

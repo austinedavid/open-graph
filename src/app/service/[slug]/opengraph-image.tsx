@@ -28,16 +28,7 @@ export default async function og({params: {slug}}: {params: {slug:string}}){
             justifyContent: "center",
             color: "white"
         }}>
-            <img src="https://firebasestorage.googleapis.com/v0/b/davidchats-cf908.appspot.com/o/1661845988377dragon2.jpg?alt=media&token=5c1700e1-b489-4818-9e5c-25564eeafa3f" alt='its acers'
-            style={{
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                top: 0,
-                left: 0,
-                opacity: 0.5
-            }}
-            />
+            
             <div style={{
                 backgroundColor: "white",
                 padding: "15px",

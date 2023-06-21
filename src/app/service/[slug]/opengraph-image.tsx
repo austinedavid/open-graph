@@ -14,7 +14,7 @@ export default async function og(){
             justifyContent: "center",
             color: "white"
         }}>
-            <Image src={acer} alt='its acers'
+            <img src="https://firebasestorage.googleapis.com/v0/b/davidchats-cf908.appspot.com/o/1661845988377dragon2.jpg?alt=media&token=5c1700e1-b489-4818-9e5c-25564eeafa3f" alt='its acers'
             style={{
                 position: "absolute",
                 width: "100%",

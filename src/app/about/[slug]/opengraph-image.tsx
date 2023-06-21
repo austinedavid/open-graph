@@ -52,6 +52,7 @@ export default async function og({params:{slug}}:{params:{slug:string}}){
                    }}>
                         <p style={{fontSize: "25px", color: "white", marginBottom: "15px"}}>{filtered[0].topic}</p>
                         <p style={{fontSize: "17px", color: "white"}}>{filtered[0].descriptions}</p>
+                        <p style={{color: "white"}}>this is for all</p>
                    </div>
             </div>),
         size

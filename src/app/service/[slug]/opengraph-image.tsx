@@ -1,5 +1,5 @@
 import {ImageResponse} from "next/server"
-import acer from "../../utils/acer2.png"
+import acer from "../../../utils/acer2.png"
 import Image from 'next/image'
 
 export default async function og(){

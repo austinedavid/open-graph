@@ -11,7 +11,10 @@ const ourobj: objType[] = [
     {id:"1", topic: "the gods", descriptions:"the gods always fight for us"},
     {id:"2", topic: "golden snake", descriptions:"golden snake is located all over delta state"},
     {id:"3", topic: "footballs gods", descriptions:"the fotball gods have declared c.ronaldo as the best"},
-    {id:"4", topic: "african magis", descriptions:"if you actually want to perform any magic come to africa"}
+    {id:"4", topic: "african magis", descriptions:"if you actually want to perform any magic come to africa"},
+    {id:"5", topic: "african magis", descriptions:"if you actually want to perform any magic come to africa"},
+    {id:"6", topic: "african magis", descriptions:"if you actually want to perform any magic come to africa"},
+    {id:"7", topic: "african magis", descriptions:"if you actually want to perform any magic come to africa"}
 ]
 // our measurement types
 type parameters = {

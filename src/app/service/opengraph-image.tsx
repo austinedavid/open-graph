@@ -1,11 +1,9 @@
-import React from 'react'
+import {ImageResponse} from "next/server"
 import acer from "../../utils/acer2.png"
 import Image from 'next/image'
 
-const page = () => {
-  return (
-    <div>
-        <p>we are now in the service route</p>
+export default async function og(){
+    return new ImageResponse((
         <div style={{
             width: "1200px",
             height: "630px",
@@ -39,8 +37,8 @@ const page = () => {
                 <p>running my file now, this is open-graph, and i am using the edge runtime for this</p>
             </div>
         </div>
-    </div>
-  )
+    ),{
+    width: 1200,
+    height: 600,
+    })
 }
-
-export default page
